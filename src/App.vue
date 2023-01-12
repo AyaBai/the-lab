@@ -30,132 +30,136 @@
 			</div>
 			
 		</div>
+
+		<div>Хламидиоз  (трахоматис)</div>
 		<div class="results">
+
+			
 			<div>
-				<span>01</span><br>
-				<span>_.___</span><br>
-				<span>мужской</span><br>
-				<span>26 лет</span>
+				<span class="number">01</span><br>
+				<span class="person_data_result">_.___</span><br>
+				<span class="person_data">мужской</span><br>
+				<span class="person_data">26 лет</span>
 			</div>
 
 			<div>
-			<span>02</span><br>
-				<span>_.___</span><br>
-				<span>мужской</span><br>
-				<span>26 лет</span>
+			<span class="number">02</span><br>
+				<span class="person_data_result">_.___</span><br>
+				<span class="person_data">мужской</span><br>
+				<span class="person_data">26 лет</span>
 			</div>
 
 			<div>
-			<span>05</span><br>
-				<span>_.___</span><br>
-				<span>мужской</span><br>
-				<span>26 лет</span>
+			<span class="number">05</span><br>
+				<span class="person_data_result">_.___</span><br>
+				<span class="person_data">мужской</span><br>
+				<span class="person_data">26 лет</span>
 			</div>
 
 			<div>
-			<span>07</span><br>
-				<span>_.___</span><br>
-				<span>мужской</span><br>
-				<span>26 лет</span>
+			<span class="number">07</span><br>
+				<span class="person_data_result">_.___</span><br>
+				<span class="person_data">мужской</span><br>
+				<span class="person_data">26 лет</span>
 			</div>
 
 			<div>
-			<span>10</span><br>
-				<span>_.___</span><br>
-				<span>мужской</span><br>
-				<span>26 лет</span>
+			<span class="number">10</span><br>
+				<span class="person_data_result">_.___</span><br>
+				<span class="person_data">мужской</span><br>
+				<span class="person_data">26 лет</span>
 			</div>
 
 			<div>
-			<span>12</span><br>
-				<span>_.___</span><br>
-				<span>мужской</span><br>
-				<span>26 лет</span>
+			<span class="number">12</span><br>
+				<span class="person_data_result">_.___</span><br>
+				<span class="person_data">мужской</span><br>
+				<span class="person_data">26 лет</span>
 			</div>
 
 			<div>
-			<span>16</span><br>
-				<span>_.___</span><br>
-				<span>мужской</span><br>
-				<span>26 лет</span>
+			<span class="number">16</span><br>
+				<span class="person_data_result">_.___</span><br>
+				<span class="person_data">мужской</span><br>
+				<span class="person_data">26 лет</span>
 			</div>
 			<div>
-			<span>22</span><br>
-				<span>_.___</span><br>
-				<span>мужской</span><br>
-				<span>26 лет</span>
+			<span class="number">22</span><br>
+				<span class="person_data_result">_.___</span><br>
+				<span class="person_data">мужской</span><br>
+				<span class="person_data">26 лет</span>
 			</div>
 			<div>
-			<span>26</span><br>
-				<span>_.___</span><br>
-				<span>мужской</span><br>
-				<span>26 лет</span>
+			<span class="number">26</span><br>
+				<span class="person_data_result">_.___</span><br>
+				<span class="person_data">мужской</span><br>
+				<span class="person_data">26 лет</span>
 			</div>
 			<div>
-			<span>36</span><br>
-				<span>_.___</span><br>
-				<span>мужской</span><br>
-				<span>26 лет</span>
+			<span class="number">36</span><br>
+				<span class="person_data_result">_.___</span><br>
+				<span class="person_data">мужской</span><br>
+				<span class="person_data">26 лет</span>
 			</div>
 			<div>
-			<span>39</span><br>
-				<span>_.___</span><br>
-				<span>мужской</span><br>
-				<span>26 лет</span>
+			<span class="number">39</span><br>
+				<span class="person_data_result">_.___</span><br>
+				<span class="person_data">мужской</span><br>
+				<span class="person_data">26 лет</span>
 			</div>
 			<div>
-			<span>40</span><br>
-				<span>_.___</span><br>
-				<span>мужской</span><br>
-				<span>26 лет</span>
+			<span class="number">40</span><br>
+				<span class="person_data_result">_.___</span><br>
+				<span class="person_data">мужской</span><br>
+				<span class="person_data">26 лет</span>
 			</div>
 			<div>
-			<span>55</span><br>
-				<span>_.___</span><br>
-				<span>мужской</span><br>
-				<span>26 лет</span>
+			<span class="number">55</span><br>
+				<span class="person_data_result">_.___</span><br>
+				<span class="person_data">мужской</span><br>
+				<span class="person_data">26 лет</span>
 			</div>
 			<div>
-			<span>56</span><br>
-				<span>_.___</span><br>
-				<span>мужской</span><br>
-				<span>26 лет</span>
+			<span class="number">56</span><br>
+				<span class="person_data_result">_.___</span><br>
+				<span class="person_data">мужской</span><br>
+				<span class="person_data">26 лет</span>
 			</div>
 			<div>
-			<span>59</span><br>
-				<span>_.___</span><br>
-				<span>мужской</span><br>
-				<span>26 лет</span>
+			<span class="number">59</span><br>
+				<span class="person_data_result">_.___</span><br>
+				<span class="person_data">мужской</span><br>
+				<span class="person_data">26 лет</span>
 			</div>
 			<div>
-			<span>85</span><br>
-				<span>_.___</span><br>
-				<span>мужской</span><br>
-				<span>26 лет</span>
+			<span class="number">85</span><br>
+				<span class="person_data_result">_.___</span><br>
+				<span class="person_data">мужской</span><br>
+				<span class="person_data">26 лет</span>
 			</div>
 			<div>
-			<span>99</span><br>
-				<span>_.___</span><br>
-				<span>мужской</span><br>
-				<span>26 лет</span>
+			<span class="number">99</span><br>
+				<span class="person_data_result">_.___</span><br>
+				<span class="person_data">мужской</span><br>
+				<span class="person_data">26 лет</span>
 			</div>
 			<div>
-			<span>102</span><br>
-				<span>_.___</span><br>
-				<span>мужской</span><br>
-				<span>26 лет</span>
+			<span class="number">102</span><br>
+				<span class="person_data_result">_.___</span><br>
+				<span class="person_data">мужской</span><br>
+				<span class="person_data">26 лет</span>
 			</div>
 			<div>
-			<span>107</span><br>
-				<span>_.___</span><br>
-				<span>мужской</span><br>
-				<span>26 лет</span>
+			<span class="number">107</span><br>
+				<span class="person_data_result">_.___</span><br>
+				<span class="person_data">мужской</span><br>
+				<span class="person_data">26 лет</span>
 			</div>
 			<div>
-			<span>108</span><br>
-				<span>_.___</span><br>
-				<span>мужской</span><br>
-				<span>26 лет</span>
+			<span class="number">108</span><br>
+				<span class="person_data_result">_.___</span><br>
+				<span class="person_data">мужской</span><br>
+				<span class="person_data">26 лет</span>
 			</div>
 		</div>
 
@@ -176,14 +180,23 @@
 				url("fonts/SFProDisplay-Regular.woff2") format("woff2"),
 				url("fonts/SFProDisplay-Regular.woff") format("woff");
 	}
-		/*@font-face {
+		@font-face {
 		font-family:'SF Pro Display';
 		font-style: normal;
-		font-weight: 500;
+		font-weight: 700;
 		src: local("SFProDisplay-Black"),
 				url("fonts/SFProDisplay-Black.woff2") format("woff2"),
 				url("fonts/SFProDisplay-Black.woff") format("woff");
-	}*/
+	}
+
+	@font-face {
+		font-family:'SF Pro Display';
+		font-style: normal;
+		font-weight: 300;
+		src: local("SFProDisplay-Light"),
+				url("fonts/SFProDisplay-Light.woff2") format("woff2"),
+				url("fonts/SFProDisplay-Light.woff") format("woff");
+	}
 
 
 	* {
@@ -207,6 +220,28 @@
 		background-image: url(img/Group 5110.svg);
 		background-repeat: no-repeat;
 		margin: 10px 0 7px 57px;
+	}
+	.number {
+		font-weight: 700;
+		font-size: 24px;
+		color: #3F3F46;
+		letter-spacing: 0.1px;
+		padding-left: 6px;
+		padding-top: 6px;
+	}
+
+	.person_data{
+		font-size: 12px;
+		letter-spacing: 0.4px;
+		color: #52525B;
+		padding-left: 6px;
+
+	}
+	.person_data_result {
+		font-weight: 600;
+		letter-spacing: 3.1px;
+		color: #52525B;
+		padding-left: 6px;
 	}
 
 
@@ -247,7 +282,7 @@
 	}
 
 	.data {
-		outline: 2px solid red;
+/*		outline: 2px solid red;*/
 		width: 430px;
 		height: 48px;
 		align-items: left;
