@@ -11,6 +11,7 @@
 	</div>
 	<div class="container">
 		<p class="page_name">Интерпретация</p>
+		<p>выбор даты</p>
 		<div class="navigation">
 			<div class="btn_menu">
 				<button class="btn"></button>
@@ -18,10 +19,12 @@
 
 			</div>
 
-			<div class="data">
+			
+
+			<div class="date">
 				<button class="btn_date">Сегодня</button>
 				<button class="btn_date">Вчера</button>
-				<input type="date" placeholder="2023-01-05">
+				<input class="calendar" type="date" placeholder="">
 			</div>
 			
 			<div class="search">
@@ -244,6 +247,30 @@
 		padding-left: 6px;
 	}
 
+	.btn_date{
+		height: 44px;
+		width: 100px;
+		padding: 12px 19px;
+		letter-spacing: 0.1px;
+		color: #71717A;
+		background-color: rgba(28,28,28,0);
+		border: none;
+		font-size: 16px;
+/*		background: transparent;*/
+	}
+
+	.calendar {
+		background: #0098EA;
+		height: 44px;
+		width: 203px;
+		border-radius: 10px;
+		box-shadow: 0px 1px 4px rgba(0, 131, 204, 0.33), 0px 1px 1px rgba(0, 44, 85, 0.08);
+		padding: 12px 20px 12px 24px;
+		border: none;
+		gap: 10px;
+		color: #fff;
+	}
+
 
 	.head_nav {
 		width: 745px;
@@ -281,18 +308,20 @@
 		flex-direction: row;
 	}
 
-	.data {
+	.date {
 /*		outline: 2px solid red;*/
 		width: 430px;
 		height: 48px;
 		align-items: left;
 		border-radius: 12px;
+		border: 1px solid #A1A1AA;
 	}
+
 	.search {
-		width: 300px;
+		width: 581px;
 		height: 48px;
 		border-radius: 12px;
-		outline: 1px solid #A1A1AA;
+		border: 1px solid #A1A1AA;
 		padding-left: 12px;
 	}
 
