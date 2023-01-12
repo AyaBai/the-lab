@@ -10,16 +10,15 @@
 
 	</div>
 	<div class="container">
+
 		<p class="page_name">Интерпретация</p>
 		<p>выбор даты</p>
+
+
 		<div class="navigation">
 			<div class="btn_menu">
 				<button class="btn"></button>
-			
-
-			</div>
-
-			
+			</div>			
 
 			<div class="date">
 				<button class="btn_date">Сегодня</button>
@@ -31,6 +30,32 @@
 				<img src="./img/Vector.svg" alt="">
 				<input class="input_search" type="text" placeholder="Поиск">
 			</div>
+			
+		</div>
+
+		<div class="menu">
+			<div>
+				<img src="./img/equalizer.svg" alt="">
+			Иммуноферментные</div>
+			<ul>
+				<li>Урогенитальные инфекции</li>
+				<li>Вирусные гепатиты</li>
+				<li>Гельминтов</li>
+				<li>Онкомаркеры</li>
+				<li>Цитокины</li>
+				<li>Зоонозные инфекции</li>
+				<li>Гормоны</li>
+				<li>Другие</li>
+			</ul>
+			<div>
+				<img src="./img/biotech.svg" alt="">
+			Биохимические</div>
+			<ul>
+				<li>Биохимия</li>
+				<li>ОАК</li>
+				<li>ОАМ</li>
+				<li>Коагулограмма</li>
+			</ul>
 			
 		</div>
 
@@ -376,6 +401,26 @@
 		height: 48px;
 		border-radius: 12px;
 		filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+		box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15), 0px 1px 1px rgba(0, 0, 0, 0.08);
+	}
+
+	.menu {
+		width: 279px;
+		height: 569px;
+		box-shadow: 0px 3.67457px 12.861px -2.75593px rgba(24, 39, 75, 0.12), 0px 8.26779px 40.4203px -1.83729px rgba(24, 39, 75, 0.14);
+		font-weight: 400;
+		font-size: 16px;
+		letter-spacing: 0.1px;
+	}
+
+	.menu> div> img {
+		width: 24px;
+		height: 24px;
+/*		outline: 2px solid red;*/
+	}
+
+	li {
+		list-style: none;
 	}
 	
 </style>
