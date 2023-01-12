@@ -369,6 +369,11 @@
 		flex-wrap: wrap;
 		margin-left: 70px;
 		padding: 5px;
+
+	}
+
+	.results > div {
+		border-color: #52525B;
 	}
 
 	.results>div {
