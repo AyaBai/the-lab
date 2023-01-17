@@ -1,39 +1,10 @@
+<link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
+<link rel="stylesheet" href="./fonts/stylesheet.css">
 <template>
-	<div class="heading">
-		<div class="logo"></div>
-		<nav class="head_nav">
-			<div>Интерпретация</div>
-			<div>Клиника / Биохимия</div>
-			<div>Забор материала</div>
-			<div>Лабараторный журнал</div>
-		</nav>
-
-	</div>
+	<NavBar></NavBar>
 	<div class="container">
-
-		<p class="page_name">Интерпретация</p>
-		<p>выбор даты</p>
-
-
-		<div class="navigation">
-			<div class="btn_menu">
-				<button class="btn"></button>
-			</div>			
-
-			<div class="date">
-				<button class="btn_date">Сегодня</button>
-				<button class="btn_date">Вчера</button>
-				<input class="calendar" type="date" placeholder="">
-			</div>
-			
-			<div class="search">
-				<img src="./img/Vector.svg" alt="">
-				<input class="input_search" type="text" placeholder="Поиск">
-			</div>
-			
-		</div>
-
-		<div class="menu">
+		<DateSearch></DateSearch>
+			<div class="menu">
 			<div>
 				<img src="./img/equalizer.svg" alt="">
 			Иммуноферментные</div>
@@ -196,11 +167,21 @@
 </template>
 
 <script>
+
+	import NavBar from './components/NavBar.vue'
+	import DateSearch from './components/DateSearch.vue'
+	
+
+	export default {
+		components:{
+			NavBar, DateSearch
+		}
+	}
 	
 </script>
 
 <style>
-	@font-face {
+	/*@font-face {
 		font-family:'SF Pro Display';
 		font-style: normal;
 		font-weight: 500;
@@ -224,12 +205,13 @@
 		src: local("SFProDisplay-Light"),
 				url("fonts/SFProDisplay-Light.woff2") format("woff2"),
 				url("fonts/SFProDisplay-Light.woff") format("woff");
-	}
+	}*/
 
 
 	* {
 		box-sizing: border-box;
 		font-family: SF Pro Display;
+		margin: 0;
 	}
 
 	.heading {
@@ -352,10 +334,11 @@
 
 	.input_search {
 		width: 80%;
-		height: 48px;
+		height: 44px;
 		border-radius: 12px;
 		border-color: #A1A1AA ;
 		border: none;
+		outline: 0;
 
 	}
 
@@ -372,14 +355,12 @@
 
 	}
 
-	.results > div {
-		border-color: #52525B;
-	}
 
-	.results>div {
+
+	.results > div {
 		width: 63px;
 		height: 96px;
-		outline: 1px solid black;
+		border: 1px solid #D4D4D8;
 		margin-right: 9px;
 		border-radius: 12px;
 		text-align: left;
