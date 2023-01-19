@@ -4,8 +4,10 @@
 	<NavBar></NavBar>
 	<div class="container">
 		<DateSearch></DateSearch>
-		<LeftMenu></LeftMenu>
-		<ResultCell></ResultCell>
+		<div class="result_container">
+			<LeftMenu></LeftMenu>
+			<ResultCell></ResultCell>
+		</div>
 	</div>
 
 </template>
@@ -70,9 +72,10 @@
 
 	* {
 		box-sizing: border-box;
-		font-family: SF Pro Display;
+		font-family: SF Pro Display, sans-serif;
 		margin: 0;
 	}
+
 
 	.heading {
 		position: relative;
@@ -154,9 +157,10 @@
 	}
 
 	.page_name {
-		font-family: SF Pro Display;
+/*		font-family: SF Pro Display;*/
 		color: #18181B;
 		font-size: 72px;
+		font-weight: 500;
 	}
 	.container {
 /*		outline: 2px solid green;*/
@@ -218,6 +222,10 @@
 
 	}
 
+	.result_container {
+		display: flex;
+	}
+
 
 
 	.results > div {
@@ -253,14 +261,7 @@
 		box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15), 0px 1px 1px rgba(0, 0, 0, 0.08);
 	}
 
-	.menu {
-		width: 279px;
-		height: 569px;
-		box-shadow: 0px 3.67457px 12.861px -2.75593px rgba(24, 39, 75, 0.12), 0px 8.26779px 40.4203px -1.83729px rgba(24, 39, 75, 0.14);
-		font-weight: 400;
-		font-size: 16px;
-		letter-spacing: 0.1px;
-	}
+	
 
 	.menu> div> img {
 		width: 24px;
