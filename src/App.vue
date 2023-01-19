@@ -4,164 +4,8 @@
 	<NavBar></NavBar>
 	<div class="container">
 		<DateSearch></DateSearch>
-			<div class="menu">
-			<div>
-				<img src="./img/equalizer.svg" alt="">
-			Иммуноферментные</div>
-			<ul>
-				<li>Урогенитальные инфекции</li>
-				<li>Вирусные гепатиты</li>
-				<li>Гельминтов</li>
-				<li>Онкомаркеры</li>
-				<li>Цитокины</li>
-				<li>Зоонозные инфекции</li>
-				<li>Гормоны</li>
-				<li>Другие</li>
-			</ul>
-			<div>
-				<img src="./img/biotech.svg" alt="">
-			Биохимические</div>
-			<ul>
-				<li>Биохимия</li>
-				<li>ОАК</li>
-				<li>ОАМ</li>
-				<li>Коагулограмма</li>
-			</ul>
-			
-		</div>
-
-		<div>Хламидиоз  (трахоматис)</div>
-		<div class="results">
-
-			
-			<div>
-				<span class="number">01</span><br>
-				<span class="person_data_result">_.___</span><br>
-				<span class="person_data">мужской</span><br>
-				<span class="person_data">26 лет</span>
-			</div>
-
-			<div>
-			<span class="number">02</span><br>
-				<span class="person_data_result">_.___</span><br>
-				<span class="person_data">мужской</span><br>
-				<span class="person_data">26 лет</span>
-			</div>
-
-			<div>
-			<span class="number">05</span><br>
-				<span class="person_data_result">_.___</span><br>
-				<span class="person_data">мужской</span><br>
-				<span class="person_data">26 лет</span>
-			</div>
-
-			<div>
-			<span class="number">07</span><br>
-				<span class="person_data_result">_.___</span><br>
-				<span class="person_data">мужской</span><br>
-				<span class="person_data">26 лет</span>
-			</div>
-
-			<div>
-			<span class="number">10</span><br>
-				<span class="person_data_result">_.___</span><br>
-				<span class="person_data">мужской</span><br>
-				<span class="person_data">26 лет</span>
-			</div>
-
-			<div>
-			<span class="number">12</span><br>
-				<span class="person_data_result">_.___</span><br>
-				<span class="person_data">мужской</span><br>
-				<span class="person_data">26 лет</span>
-			</div>
-
-			<div>
-			<span class="number">16</span><br>
-				<span class="person_data_result">_.___</span><br>
-				<span class="person_data">мужской</span><br>
-				<span class="person_data">26 лет</span>
-			</div>
-			<div>
-			<span class="number">22</span><br>
-				<span class="person_data_result">_.___</span><br>
-				<span class="person_data">мужской</span><br>
-				<span class="person_data">26 лет</span>
-			</div>
-			<div>
-			<span class="number">26</span><br>
-				<span class="person_data_result">_.___</span><br>
-				<span class="person_data">мужской</span><br>
-				<span class="person_data">26 лет</span>
-			</div>
-			<div>
-			<span class="number">36</span><br>
-				<span class="person_data_result">_.___</span><br>
-				<span class="person_data">мужской</span><br>
-				<span class="person_data">26 лет</span>
-			</div>
-			<div>
-			<span class="number">39</span><br>
-				<span class="person_data_result">_.___</span><br>
-				<span class="person_data">мужской</span><br>
-				<span class="person_data">26 лет</span>
-			</div>
-			<div>
-			<span class="number">40</span><br>
-				<span class="person_data_result">_.___</span><br>
-				<span class="person_data">мужской</span><br>
-				<span class="person_data">26 лет</span>
-			</div>
-			<div>
-			<span class="number">55</span><br>
-				<span class="person_data_result">_.___</span><br>
-				<span class="person_data">мужской</span><br>
-				<span class="person_data">26 лет</span>
-			</div>
-			<div>
-			<span class="number">56</span><br>
-				<span class="person_data_result">_.___</span><br>
-				<span class="person_data">мужской</span><br>
-				<span class="person_data">26 лет</span>
-			</div>
-			<div>
-			<span class="number">59</span><br>
-				<span class="person_data_result">_.___</span><br>
-				<span class="person_data">мужской</span><br>
-				<span class="person_data">26 лет</span>
-			</div>
-			<div>
-			<span class="number">85</span><br>
-				<span class="person_data_result">_.___</span><br>
-				<span class="person_data">мужской</span><br>
-				<span class="person_data">26 лет</span>
-			</div>
-			<div>
-			<span class="number">99</span><br>
-				<span class="person_data_result">_.___</span><br>
-				<span class="person_data">мужской</span><br>
-				<span class="person_data">26 лет</span>
-			</div>
-			<div>
-			<span class="number">102</span><br>
-				<span class="person_data_result">_.___</span><br>
-				<span class="person_data">мужской</span><br>
-				<span class="person_data">26 лет</span>
-			</div>
-			<div>
-			<span class="number">107</span><br>
-				<span class="person_data_result">_.___</span><br>
-				<span class="person_data">мужской</span><br>
-				<span class="person_data">26 лет</span>
-			</div>
-			<div>
-			<span class="number">108</span><br>
-				<span class="person_data_result">_.___</span><br>
-				<span class="person_data">мужской</span><br>
-				<span class="person_data">26 лет</span>
-			</div>
-		</div>
-
+		<LeftMenu></LeftMenu>
+		<ResultCell></ResultCell>
 	</div>
 
 </template>
@@ -170,13 +14,29 @@
 
 	import NavBar from './components/NavBar.vue'
 	import DateSearch from './components/DateSearch.vue'
+	import LeftMenu from './components/LeftMenu.vue'
+	import ResultCell from './components/ResultCell.vue'
 	
 
 	export default {
 		components:{
-			NavBar, DateSearch
-		}
+			NavBar, DateSearch, LeftMenu, ResultCell
+		},
+
+		// data() {
+		// 	return {
+		// 		items: [
+		// 			{
+		// 			number:'01',
+		// 			result:'',
+		// 			gender:'',	
+		// 			age:''
+		// 			}
+		// 		]
+		// 	}
+		// }
 	}
+
 	
 </script>
 
@@ -222,6 +82,7 @@
 		display: flex;
 		flex-direction: row;
 		align-items: center;
+		margin-bottom: 104px;
 	}
 
 	.logo {
@@ -276,6 +137,7 @@
 		border: none;
 		gap: 10px;
 		color: #fff;
+		outline: 0;
 	}
 
 
@@ -319,9 +181,10 @@
 /*		outline: 2px solid red;*/
 		width: 430px;
 		height: 48px;
-		align-items: left;
 		border-radius: 12px;
 		border: 1px solid #A1A1AA;
+		display: flex;
+		justify-content: space-between;
 	}
 
 	.search {
@@ -405,8 +268,6 @@
 /*		outline: 2px solid red;*/
 	}
 
-	li {
-		list-style: none;
-	}
+	
 	
 </style>
