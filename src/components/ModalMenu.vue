@@ -1,40 +1,7 @@
+<link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
+<link rel="stylesheet" href="./fonts/stylesheet.css">
 <template>
-
-  <vue-final-modal>
-  <template v-slot:number>
-    <p>55487</p>
-    </template>
-  </vue-final-modal>
-
-
-  <div class="container_results">
-    <div>Хламидиоз  (трахоматис)</div>
-    <div  class="results">
-      <div v-for="item in items" :key="item.number" @click="showModalMenu(item)">
-        
-        <span class="number"> {{item.number}}</span><br>
-        
-        <span class="person_data_result">_.___</span><br>
-        <span class="person_data">{{item.gender}}</span><br>
-        <span class="person_data">{{item.age}}</span>
-      </div>
-    </div>
-  
-    <div>Хламидиоза (пневмония)  IgM</div>
-    <div  class="results">
-      
-      <div v-for="item in items" :key="item.number" @click="showModalMenu(item)">
-        <span class="number">{{item.number}}</span><br>
-        <span class="person_data_result">_.___</span><br>
-        <span class="person_data">{{item.gender}}</span><br>
-        <span class="person_data">{{item.age}}</span>
-      </div>
-    </div>
-
-
-  </div>
-
-
+	<div>
     <vue-final-modal v-model="showModal" classes="modal-container" content-class="modal-content">
       <button class="btn_red"  @click="showModal = false"></button>
      <!-- <span class="modal__title">Modal Content Here </span> -->
@@ -87,9 +54,9 @@
         
         <div class="modal_right_info">
           <div class="mr_data">
-            <p class="mr_data_num">{{cellNumber}}</p>
-            <p class="mr_data_name">Константин</p>
-            <p class="mr_data_name">Константинопольский</p>
+          <p class="mr_data_num">405</p>
+          <p class="mr_data_name">Константин</p>
+          <p class="mr_data_name">Константинопольский</p>
           </div>
           <div class="mr_data_iin">
             955 559 588 598
@@ -100,14 +67,14 @@
           <div class="mr_info2_data">
             <div class="mr_info2_cover">
               <div class="mr_info2_title">Пол</div>
-              <div class="mr_info2_text">{{cellGender}}</div>
+              <div class="mr_info2_text">Женский</div>
             </div>
           </div>
 
           <div class="mr_info2_data">
             <div class="mr_info2_cover">
               <div pan class="mr_info2_title"> Возраст</div>
-              <div pan class="mr_info2_text">{{cellAge}}</div>
+              <div pan class="mr_info2_text">26 лет</div>
             </div> 
           </div>
 
@@ -175,119 +142,25 @@
       </div> -->
 
     </vue-final-modal>
+  </div>
+	
+
 
 </template>
 
-
 <script>
-  import { VueFinalModal } from 'vue-final-modal'
-  
+	import { VueFinalModal } from 'vue-final-modal'
+
   export default {
     components: {
       VueFinalModal
-    },
-    data() {
-      return {
-        showModal: false,
-        cellNumber:'',
-        cellAge:'',
-        cellGendre:'',
-        items: [
-          {
-            number:'01',
-            result:'',
-            gender:'мужской', 
-            age:'26 лет'
-          },
-          {
-            number:'02',
-            result:'',  
-            gender:'женский', 
-            age:'20 лет'
-          },
-          {
-            number:'05',
-            result:'',  
-            gender:'мужской', 
-            age:'30 лет'
-          },
-          {
-            number:'07',
-            result:'',  
-            gender:'мужской', 
-            age:'26 лет'
-          },
-          {
-            number:'09',
-            result:'',  
-            gender:'мужской', 
-            age:'26 лет'
-          },
-          {
-            number:'10',
-            result:'',  
-            gender:'мужской', 
-            age:'26 лет'
-          },
-           {
-            number:'12',
-            result:'',  
-            gender:'мужской', 
-            age:'26 лет'
-          },
-           {
-            number:'16',
-            result:'',  
-            gender:'мужской', 
-            age:'26 лет'
-          },
-          {
-            number:'22',
-            result:'',  
-            gender:'мужской', 
-            age:'26 лет'
-          },
-          {
-            number:'25',
-            result:'',  
-            gender:'мужской', 
-            age:'26 лет'
-          },
-
-
-        ]
-        
-      }
-    },
-    methods: {
-    showModalMenu(item) {
-      this.showModal = true
-      this.cellNumber = item.number
-      this.cellAge = item.age
-      this.cellGender = item.gender
-     
-    },
-    closeModal () {
-      this.showModal = false
     }
   }
-  }
-  
+	
+
 </script>
 
-<style scoped>
-  .results {
-    
-/*    outline: 2px solid blue;*/
-    height: 276px;
-    width: 100%;
-    flex-direction: row;
-    overflow: hidden;
-    flex-wrap: wrap;
-    margin-left: 70px;
-    padding: 5px;
-
-  }
+<style>
 
 
   :deep .modal-container {
@@ -507,7 +380,6 @@
   border-radius: 34px;
   color: #FFFFFF;
   border: none;
-  padding: 8px 30px;
 }
 
 .btn_blue {
@@ -734,6 +606,6 @@ a:hover {
 
 
 }
-
+	
 
 </style>
