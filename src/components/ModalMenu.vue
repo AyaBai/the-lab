@@ -1,10 +1,12 @@
 <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
 <link rel="stylesheet" href="./fonts/stylesheet.css">
 <template>
+  <div class="test"><button @click="showModalMenu(item)">PopUp</button></div>
+
 	<div>
     <vue-final-modal v-model="showModal" classes="modal-container" content-class="modal-content">
-      <button class="btn_red"  @click="showModal = false"></button>
-     <!-- <span class="modal__title">Modal Content Here </span> -->
+      <button class="btn_red"  @click="closeModal()"></button>
+     
      <div class="container_modal">
        <div class="modal_left">
         <div class="modal_left_name">
@@ -54,9 +56,9 @@
         
         <div class="modal_right_info">
           <div class="mr_data">
-          <p class="mr_data_num">405</p>
-          <p class="mr_data_name">Константин</p>
-          <p class="mr_data_name">Константинопольский</p>
+            <p class="mr_data_num">{{cellNumber}}</p>
+            <p class="mr_data_name">Константин</p>
+            <p class="mr_data_name">Константинопольский</p>
           </div>
           <div class="mr_data_iin">
             955 559 588 598
@@ -67,14 +69,14 @@
           <div class="mr_info2_data">
             <div class="mr_info2_cover">
               <div class="mr_info2_title">Пол</div>
-              <div class="mr_info2_text">Женский</div>
+              <div class="mr_info2_text">{{cellGender}}</div>
             </div>
           </div>
 
           <div class="mr_info2_data">
             <div class="mr_info2_cover">
               <div pan class="mr_info2_title"> Возраст</div>
-              <div pan class="mr_info2_text">26 лет</div>
+              <div pan class="mr_info2_text">{{cellAge}}</div>
             </div> 
           </div>
 
@@ -154,13 +156,55 @@
   export default {
     components: {
       VueFinalModal
+    },
+
+    data() {
+      return {
+        showModal: false,
+        cellNumber:'',
+        cellAge:'',
+        cellGendre:'',
+      }
+    },
+
+    props: {
+      items: {
+        type: Array,
+        required: true
+      }
+    },
+
+    methods: {
+      showModalMenu(item) {
+        this.showModal = true
+        this.cellNumber = item.number
+        this.cellAge = item.age
+        this.cellGender = item.gender
+       
+      },
+      closeModal () {
+        this.showModal = false
+      },
+      cellPopUp() {
+        this.$emit('popUp', this.cellNumber)
+      }
     }
   }
 	
 
 </script>
 
-<style>
+<style scoped>
+  .test {
+    outline: 2px solid red;
+    width: 100px;
+    height: 100px;
+  }
+
+  .test > button {
+    width: 50px;
+    height: 50px;
+  }
 
 
   :deep .modal-container {

@@ -4,12 +4,13 @@
   <NavBar></NavBar>
   
   <div class="container">
+     
+    <ModalMenu :items="items"></ModalMenu>
+
     <DateSearch></DateSearch>
     <div class="result_container">
       <LeftMenu></LeftMenu>
-      <ResultCell></ResultCell>
-
-
+      <ResultCell :items="items"></ResultCell>
     </div>
   </div>
 
@@ -21,28 +22,85 @@
   import DateSearch from './components/DateSearch.vue'
   import LeftMenu from './components/LeftMenu.vue'
   import ResultCell from './components/ResultCell.vue'
-  // import ModalMenu from './components/ModalMenu.vue'
+  import ModalMenu from './components/ModalMenu.vue'
   
   
 
   export default {
     components:{
-      NavBar, DateSearch, LeftMenu, ResultCell
-    }
-  //  data() {
-  //    return {
-  //      items: [
-  //        {
-  //        number:'01',
-  //        result:'',
-  //        gender:'',  
-  //        age:''
-  //        }
-  //      ]
-  //    }
-  //  }
-  }
+      NavBar, DateSearch, LeftMenu, ResultCell, ModalMenu
+    },
 
+    data() {
+        return {
+          items: [
+            {
+              number:'01',
+              result:'',
+              gender:'мужской', 
+              age:'26 лет'
+            },
+            {
+              number:'02',
+              result:'',  
+              gender:'женский', 
+              age:'20 лет'
+            },
+            {
+              number:'05',
+              result:'',  
+              gender:'мужской', 
+              age:'30 лет'
+            },
+            {
+              number:'07',
+              result:'',  
+              gender:'мужской', 
+              age:'26 лет'
+            },
+            {
+              number:'09',
+              result:'',  
+              gender:'мужской', 
+              age:'26 лет'
+            },
+            {
+              number:'10',
+              result:'',  
+              gender:'мужской', 
+              age:'26 лет'
+            },
+             {
+              number:'12',
+              result:'',  
+              gender:'мужской', 
+              age:'26 лет'
+            },
+             {
+              number:'16',
+              result:'',  
+              gender:'мужской', 
+              age:'26 лет'
+            },
+            {
+              number:'22',
+              result:'',  
+              gender:'мужской', 
+              age:'26 лет'
+            },
+            {
+              number:'25',
+              result:'',  
+              gender:'мужской', 
+              age:'26 лет'
+            },
+
+
+          ]
+          
+        }
+  }
+}
   
 </script>
 
@@ -52,6 +110,7 @@
     font-family: SF Pro Display, sans-serif;
     margin: 0;
   }
+  
 
 
   .heading {

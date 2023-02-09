@@ -1,10 +1,6 @@
 <template>
 
-  <vue-final-modal>
-  <template v-slot:number>
-    <p>55487</p>
-    </template>
-  </vue-final-modal>
+  <ModalMenu @popUp="cellPopUp(cellNumber)"></ModalMenu>
 
 
   <div class="container_results">
@@ -35,242 +31,115 @@
   </div>
 
 
-    <vue-final-modal v-model="showModal" classes="modal-container" content-class="modal-content">
-      <button class="btn_red"  @click="showModal = false"></button>
-     <!-- <span class="modal__title">Modal Content Here </span> -->
-     <div class="container_modal">
-       <div class="modal_left">
-        <div class="modal_left_name">
-          <div class="modal_left_head" >Вирусный гепатит А</div>
-          <div class="modal_left_main">HBsAg</div>
-          <div class="modal_left_footer">N: 0.001 – 4.000</div>
-        </div>
-        <div class="modal_input">
-          <input type="text" class="modal_input_left" placeholder="_.___">
-          <button class="modal_btn_right">Клавиатура</button>
-        </div>
-
-        <button class="modal_btn">
-          Ложно положительный
-        </button>
-
-        <div class="modal_table_left">
-          <div>
-            <div class="table_left_head">тест система</div>
-            <div class="mt_left_row">
-              <div class="mt_left_column_1"> IMDI 107</div>
-              <div class="mt_left_column_1 active"> MBU 19087-3</div>
-              <div class="mt_left_column_1">KF 39/4</div>
-            </div>
-          </div>
-
-          <div class="mt_left_row">
-            <div class="table_right_head">остаток</div>
-            <div class="mt_left_row">
-              <div class="mt_left_column_2"> 96 / 96</div>
-              <div class="mt_left_column_2 active"> 1996 / 596</div>
-              <div class="mt_left_column_2">1235 / 45</div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="ml_btn_footer">
-          <button class="btn_blue">Сохранить</button>
-          <button class="btn_green">Расичтать</button>
-        </div>
-
-
-
-       </div>
-       <!-- modal_right -->
-       <div class="modal_right">
-        
-        <div class="modal_right_info">
-          <div class="mr_data">
-            <p class="mr_data_num">{{cellNumber}}</p>
-            <p class="mr_data_name">Константин</p>
-            <p class="mr_data_name">Константинопольский</p>
-          </div>
-          <div class="mr_data_iin">
-            955 559 588 598
-          </div>
-        </div>
-
-        <div class="modal_right_info2">
-          <div class="mr_info2_data">
-            <div class="mr_info2_cover">
-              <div class="mr_info2_title">Пол</div>
-              <div class="mr_info2_text">{{cellGender}}</div>
-            </div>
-          </div>
-
-          <div class="mr_info2_data">
-            <div class="mr_info2_cover">
-              <div pan class="mr_info2_title"> Возраст</div>
-              <div pan class="mr_info2_text">{{cellAge}}</div>
-            </div> 
-          </div>
-
-          <div class="mr_info2_data">
-            <div class="mr_info2_cover">
-              <div pan class="mr_info2_title">Беременность</div>
-              <div class="mr_info2_text">2 неделя</div>
-            </div>
-          </div>
-
-          <div class="mr_info2_data">
-            <div class="mr_info2_cover">
-              <div class="mr_info2_title">Цикл</div>
-              <div class="mr_info2_text">3 день</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="ordered_analysis">
-          <div class="ordered_analysis_left">
-            <div class="analysis_left_title">Заказанные анализы</div>
-            <div class="analysis_left_body">Хламидиоза (трахоматис)</div>
-            <div class="analysis_left_body">Микоплазма (пневмония)</div>
-            <div class="analysis_left_body">Уреаплазмоза</div>
-            <div class="analysis_left_body">Токсоплазмоза</div>
-            <div class="analysis_left_body">Сифилиса</div>
-            <div class="analysis_left_body">Зостер Варицелла</div>
-            <div class="analysis_left_body">Кандидоза</div>
-            <div class="analysis_left_body">Вирусный гепатит С</div>
-            <div class="analysis_left_body">Кортизол</div>
-            
-          </div>
-          <div class="ordered_analysis_right">
-            <div class="analysis_right_title"><a href="#">История заказов</a></div>
-            <div class="analysis_right_body">IgG IgM  IgA  авид  вЦик  Аффи.  sIgE</div>
-            <div class="analysis_right_body">IgG</div>
-            <div class="analysis_right_body">IgG  IgM  IgA</div>
-            <div class="analysis_right_body">IgG  IgM  IgA  авид  вЦик  Аффи.  sIgE</div>
-            <div class="analysis_right_body">IgG  IgM</div>
-            <div class="analysis_right_body">IgG  IgM  IgA  авид  вЦик  Аффи.  sIgE</div>
-            <div class="analysis_right_body">sIgE</div>
-            <div class="analysis_right_body">АТ</div>
-            <div class="analysis_right_body">--</div>
-            
-          </div>
-        </div>
-
-        <div class="btn_analysis">
-            <button class="btn_analysis_left">
-              <div class="btn_arrow_left"> 449</div>
-            </button>
-            <button class="btn_analysis_right">
-              <div class="btn_arrow_right"> 450</div>
-            </button>
-          </div>
-
-       </div><!-- modal_right end -->
-
-
-     </div>
-
-     <!-- <div class="modal__action">
-        <button highlight @click="showConfirmModal = true">confirm</button>
-        <button @click="showModal = false">cancel</button>
-      </div> -->
-
-    </vue-final-modal>
+    
+    
 
 </template>
 
 
 <script>
-  import { VueFinalModal } from 'vue-final-modal'
+  import ModalMenu from '@/components/ModalMenu.vue'
   
   export default {
     components: {
-      VueFinalModal
+      ModalMenu
+    },
+    props: {
+      items: {
+        type: Array,
+        required: true
+      }
     },
     data() {
       return {
         showModal: false,
         cellNumber:'',
         cellAge:'',
-        cellGendre:'',
-        items: [
-          {
-            number:'01',
-            result:'',
-            gender:'мужской', 
-            age:'26 лет'
-          },
-          {
-            number:'02',
-            result:'',  
-            gender:'женский', 
-            age:'20 лет'
-          },
-          {
-            number:'05',
-            result:'',  
-            gender:'мужской', 
-            age:'30 лет'
-          },
-          {
-            number:'07',
-            result:'',  
-            gender:'мужской', 
-            age:'26 лет'
-          },
-          {
-            number:'09',
-            result:'',  
-            gender:'мужской', 
-            age:'26 лет'
-          },
-          {
-            number:'10',
-            result:'',  
-            gender:'мужской', 
-            age:'26 лет'
-          },
-           {
-            number:'12',
-            result:'',  
-            gender:'мужской', 
-            age:'26 лет'
-          },
-           {
-            number:'16',
-            result:'',  
-            gender:'мужской', 
-            age:'26 лет'
-          },
-          {
-            number:'22',
-            result:'',  
-            gender:'мужской', 
-            age:'26 лет'
-          },
-          {
-            number:'25',
-            result:'',  
-            gender:'мужской', 
-            age:'26 лет'
-          },
+        cellGendre:''
+        // items: [
+        //   {
+        //     number:'01',
+        //     result:'',
+        //     gender:'мужской', 
+        //     age:'26 лет'
+        //   },
+        //   {
+        //     number:'02',
+        //     result:'',  
+        //     gender:'женский', 
+        //     age:'20 лет'
+        //   },
+        //   {
+        //     number:'05',
+        //     result:'',  
+        //     gender:'мужской', 
+        //     age:'30 лет'
+        //   },
+        //   {
+        //     number:'07',
+        //     result:'',  
+        //     gender:'мужской', 
+        //     age:'26 лет'
+        //   },
+        //   {
+        //     number:'09',
+        //     result:'',  
+        //     gender:'мужской', 
+        //     age:'26 лет'
+        //   },
+        //   {
+        //     number:'10',
+        //     result:'',  
+        //     gender:'мужской', 
+        //     age:'26 лет'
+        //   },
+        //    {
+        //     number:'12',
+        //     result:'',  
+        //     gender:'мужской', 
+        //     age:'26 лет'
+        //   },
+        //    {
+        //     number:'16',
+        //     result:'',  
+        //     gender:'мужской', 
+        //     age:'26 лет'
+        //   },
+        //   {
+        //     number:'22',
+        //     result:'',  
+        //     gender:'мужской', 
+        //     age:'26 лет'
+        //   },
+        //   {
+        //     number:'25',
+        //     result:'',  
+        //     gender:'мужской', 
+        //     age:'26 лет'
+        //   },
 
 
-        ]
+        // ]
         
       }
     },
     methods: {
-    showModalMenu(item) {
-      this.showModal = true
-      this.cellNumber = item.number
-      this.cellAge = item.age
-      this.cellGender = item.gender
+      cellPopUp(cellNumber) {
+        console.log ('hi')
+      }
+
+    // showModalMenu(item) {
+    //   this.showModal = true
+    //   this.cellNumber = item.number
+    //   this.cellAge = item.age
+    //   this.cellGender = item.gender
      
-    },
-    closeModal () {
-      this.showModal = false
+    // },
+    // closeModal () {
+    //   this.showModal = false
+    // }
+
     }
-  }
   }
   
 </script>
